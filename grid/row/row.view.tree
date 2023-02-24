@@ -1,0 +1,3 @@
+$novorostorgi_grid_row $mol_view
+	sub <= cols /$mol_view_content
+

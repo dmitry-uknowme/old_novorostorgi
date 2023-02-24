@@ -1,0 +1,9 @@
+$novorostorgi_app $mol_stack
+	title \НоворосТорги
+	sub /
+		<= Container $mol_view
+			sub /
+				<= Header $novorostorgi_header
+		
+
+

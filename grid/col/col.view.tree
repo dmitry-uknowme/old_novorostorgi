@@ -1,0 +1,14 @@
+$novorostorgi_grid_col $mol_view
+	attr *
+		^
+		c-xs <= xs \12
+		c-sm <= sm \12
+		c-md <= md \auto
+		c-lg <= lg \auto
+		c-xl <= xl \auto
+		c-off-xs <= offset_xs 0
+		c-off-sm <= offset_sm 0
+		c-off-md <= offset_md 0
+		c-off-lg <= offset_lg 0
+		c-off-xl <= offset_xl 0
+	sub <= content /$mol_view_content

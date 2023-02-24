@@ -1,0 +1,4 @@
+$novorostorgi_grid_container $mol_view
+	sub <= body /$mol_view_content
+
+

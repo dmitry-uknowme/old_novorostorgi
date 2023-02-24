@@ -1,0 +1,57 @@
+$novorostorgi_header $mol_view
+	dom_name \header
+	plugins /
+		<= Nav $mol_nav
+			keys_x <= nav_list
+			current_x?val <=> nav_item_current?val
+	sub /
+		<= Container $novorostorgi_grid_container
+			body /
+				<= Row $novorostorgi_grid_row
+					cols /
+						<= Col_logo $novorostorgi_grid_col
+							xl \2
+							lg \2
+							md \2
+							sm \6
+							xs \12
+							content /
+								<= Logo $mol_image
+									uri \../../assets/logo.png
+									title \НоворосТорги
+						<= Col_nav $novorostorgi_grid_col
+							xl \5
+							lg \4
+							md \0
+							sm \0
+							xs \0
+							offset_xl \1
+							offset_lg \1
+							content /
+								<= Nav_list $mol_switch
+									keys => nav_list
+									value?val <=> nav_item_current?val \
+									options *
+										tenders \Закупки
+										pricelist \Тарифы
+										about \О площадке
+										support \Помощь
+						<= Col_button $novorostorgi_grid_col
+							xl \2
+							lg \2
+							md \0
+							sm \0
+							xs \0
+							offset_xl \1
+							content /
+								<= Button $mol_button_major
+									title \Вход в личный кабинет
+						<= Col_button_sm $novorostorgi_grid_col
+							xl \0
+							lg \0
+							md \2
+							sm \3
+							xs \3
+							content /
+								<= Button_sm $mol_button_major
+									title \Вход в ЛК
